@@ -1,0 +1,34 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__left-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__left-container .nav__title {
+  font-size: 30px;
+}
+.nav__left-container .nav__logo {
+  width: 100px;
+}
+
+.nav__right-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav__right-container .nav__link {
+  color: red;
+}
+
+/*
+  SASS
+  - Variables - Yes. 
+  - Nesting - Yes. 
+  - Partials, which includes the _partial.scss file, @use './partial', and using the partial's variables, functions, and mixins - Yes. 
+  - Mixin - Yes. 
+*//*# sourceMappingURL=index.css.map */

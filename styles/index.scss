@@ -1,0 +1,35 @@
+@use './partial'; //index.scss can use _partial.scss's variables, mixins, and functions.
+
+.nav {
+  @include partial.flexRow;
+  justify-content: space-between;
+}
+
+.nav__left-container {
+  @include partial.flexRow;
+  align-items: center;
+
+  .nav__title {
+    font-size: 30px;
+  }
+  .nav__logo {
+    width: 100px;
+  }
+}
+
+.nav__right-container {
+  @include partial.flexRow;
+  align-items: center;
+  
+  .nav__link {
+    color: partial.$primary-color;
+  }
+}
+
+/*
+  SASS
+  - Variables - Yes. 
+  - Nesting - Yes. 
+  - Partials, which includes the _partial.scss file, @use './partial', and using the partial's variables, functions, and mixins - Yes. 
+  - Mixin - Yes. 
+*/
